@@ -5,7 +5,7 @@ const Modal = ({ label, show, handle }) => {
   if (show) {
     return (
       <div className="modal-card">
-        <div className="modal show" tabIndex="1">
+        <div className="modal show" style={{ display: "block" }} tabIndex="1">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">

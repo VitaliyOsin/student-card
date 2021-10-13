@@ -7,9 +7,7 @@ const Card = () => {
   const history = useHistory();
   console.log(card);
   useEffect(() => {
-    console.log(card);
     if (localStorage.getItem("student-card")) {
-      console.log("card is exist");
       setCard({ ...JSON.parse(localStorage.getItem("student-card")) });
     }
   }, []);
